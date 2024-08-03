@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Spartan", sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    height: 100vh;
+
+}
+
+.details-table{
+    font-family: Arial, sans-serif;
+    margin-bottom: 50px;
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px; /* Space between the caption and table */
+    text-align: center;
+}
+
+
+#tr, th {
+    border: 1px solid #000; /* Black border for all cells */
+    text-align: center;
+    padding: 8px;
+    background-color: beige;
+    width: 50px; /* Adjust to match the number of columns */
+}
+
+#th, td {
+    border: 1px solid #000; /* Black border for all cells */
+    text-align: center;
+    padding: 8px;
+    width: 50px; /* Adjust to match the number of columns */
+}
+
+#th {
+    background-color: #f2f2f2;
+    border-bottom: 2px solid #000; /* Thicker bottom border for headers */
+}
+
