@@ -9,16 +9,20 @@
 
 body {
     font-family: Arial, sans-serif;
-    display: flex;
+    display: initial;
     justify-content: center;
     padding: 20px;
-    height: 100vh;
-
 }
 
-.details-table{
+H1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.details-table {
     font-family: Arial, sans-serif;
     margin-bottom: 50px;
+    padding: 20px;
 }
 
 caption {
@@ -28,13 +32,12 @@ caption {
     text-align: center;
 }
 
-
 #tr, th {
     border: 1px solid #000; /* Black border for all cells */
     text-align: center;
     padding: 8px;
     background-color: beige;
-    width: 50px; /* Adjust to match the number of columns */
+    width: 100%; /* Adjust to match the number of columns */
 }
 
 #th, td {
@@ -49,3 +52,50 @@ caption {
     border-bottom: 2px solid #000; /* Thicker bottom border for headers */
 }
 
+.footer {
+    background-color: #333; /* Dark background color */
+    color: white; /* White text color */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    caption {
+        font-size: 1.2em;
+    }
+
+    H1{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .details-table {
+        font-family: Arial, sans-serif;
+        margin-bottom: 50px;
+        padding: 20px;
+    }
+
+    tr, th {
+        font-size: 0.8em; /* Reduce font size on smaller screens */
+        padding: 6px; /* Reduce padding on smaller screens */
+        width: 100%;
+    }
+
+    tr, th {
+        font-size: 0.8em; /* Reduce font size on smaller screens */
+        padding: 6px; /* Reduce padding on smaller screens */
+    }
+
+    #th {
+        background-color: #f2f2f2;
+        border-bottom: 2px solid #000; /* Thicker bottom border for headers */
+    }
+
+    .footer {
+       display: none;
+    }
+}
